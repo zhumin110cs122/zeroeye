@@ -21,7 +21,7 @@ set(ENGINE_SOURCES
 set(ENGINE_HEADERS
     ${CMAKE_SOURCE_DIR}/../engine.h
     ${CMAKE_SOURCE_DIR}/../engine_config.hpp
-    ${CMAKE_SOURCE_DIR}/../some_rogue_math_utils.hpp
+    ${CMAKE_SOURCE_DIR}/../math_util.hpp
     core/types.hpp
     core/math.hpp
     core/ecs.hpp

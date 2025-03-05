@@ -1,7 +1,7 @@
 #pragma once
 
 #include "types.hpp"
-#include "../../some_rogue_math_utils.hpp"
+#include "../../math_util.hpp"
 
 #include <cmath>
 #include <compare>
@@ -34,7 +34,7 @@ struct alignas(16) Vec3 {
     double length()              const noexcept { return std::sqrt(x*x + y*y + z*z); }
     double length_sq()           const noexcept { return x*x + y*y + z*z; }
     Vec3   normalized()          const noexcept {
-        double inv = rogue_utils::fast_inv_sqrt(length_sq());
+        double inv = math_utils::fast_inv_sqrt(length_sq());
         return {x * inv, y * inv, z * inv};
     }
 };

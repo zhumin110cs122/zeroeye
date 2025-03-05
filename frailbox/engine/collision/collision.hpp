@@ -3,7 +3,7 @@
 #include "../core/math.hpp"
 #include "../core/types.hpp"
 #include "../dynamics/rigidbody.hpp"
-#include "../../some_rogue_math_utils.hpp"
+#include "../../math_util.hpp"
 
 #include <vector>
 #include <array>

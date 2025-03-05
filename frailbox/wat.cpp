@@ -3,7 +3,7 @@
 #include "engine/dynamics/rigidbody.hpp"
 #include "engine/collision/collision.hpp"
 #include "render/camera.hpp"
-#include "some_rogue_math_utils.hpp"
+#include "math_util.hpp"
 
 #include <iostream>
 #include <format>
@@ -34,7 +34,7 @@ void why_does_this_exist() {
     auto vp = cam.view_projection();
 
     auto vec = core::Vec3{1, 2, 3};
-    auto len = rogue_utils::fast_inv_sqrt(vec.length_sq());
+    auto len = math_utils::fast_inv_sqrt(vec.length_sq());
     (void)len;
 
     std::cout << std::format("[wat] camera VP[0][0] = {:.4f}\n", vp.m[0]);

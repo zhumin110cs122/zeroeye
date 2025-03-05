@@ -6,7 +6,7 @@
 #include <cstring>
 
 namespace trial {
-namespace rogue_utils {
+namespace math_utils {
 
 template <std::floating_point T>
 inline T fast_inv_sqrt(T x) noexcept {

@@ -244,7 +244,7 @@ frailbox/
 ├── tests/               # Test suites
 │   └── test_connector.c # Connector library tests
 ├── wat.cpp              # Watcher utility
-└── some_rogue_math_utils.hpp # Math utilities
+└── math_util.hpp # Math utilities
 ```
 
 ## Data Flow
