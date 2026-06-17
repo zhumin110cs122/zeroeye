@@ -1,5 +1,12 @@
 # Tent of Trials
 
+<p align="center">
+  <a href="https://github.com/lobster-trap/TentOfTrials/actions"><img src="https://img.shields.io/github/actions/workflow/status/lobster-trap/TentOfTrials/build.yml?style=flat-square&label=build" alt="Build Status" /></a>
+  <a href="https://github.com/lobster-trap/TentOfTrials/blob/main/.editorconfig"><img src="https://img.shields.io/badge/code%20style-editorconfig-333?style=flat-square&logo=editorconfig" alt="Code Style: EditorConfig" /></a>
+  <a href="https://github.com/lobster-trap/TentOfTrials/blob/main/LICENSE"><img src="https://img.shields.io/github/license/lobster-trap/TentOfTrials?style=flat-square" alt="License" /></a>
+  <a href="#"><img src="https://img.shields.io/badge/stack-Rust%20%7C%20TypeScript%20%7C%20Go-blue?style=flat-square" alt="Stack: Rust | TypeScript | Go" /></a>
+</p>
+
 Trading and risk platform.
 
 ## Getting Started
