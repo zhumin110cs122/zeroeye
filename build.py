@@ -38,7 +38,7 @@ def current_commit_id() -> str:
     return "00000000"
 
 
-def diagnostic_paths_for_commit() -> tuple[Path, Path, str]:
+def diagnostic_paths_for_commit() -> tuple[Path, Path, str] -> tuple[Path, Path, str]:
     """Return stable diagnostic artifact paths under diagnostic/ for the current commit."""
     DIAGNOSTIC_DIR.mkdir(parents=True, exist_ok=True)
     commit_id = current_commit_id()
@@ -196,7 +196,7 @@ def _normalize_os() -> Optional[str]:
     return None
 
 
-def detect_encryptly_platform() -> Optional[str]:
+def detect_encryptly_platform() -> Optional[str] -> Optional[str]:
     os_name = _normalize_os()
     arch = _normalize_arch(platform.machine())
     if os_name is None or arch is None:
@@ -204,7 +204,7 @@ def detect_encryptly_platform() -> Optional[str]:
     return f"{os_name}-{arch}"
 
 
-def get_encryptly_bin() -> Optional[Path]:
+def get_encryptly_bin() -> Optional[Path] -> Optional[Path]:
     target = detect_encryptly_platform()
     if target is not None:
         binary = ENCRYPTLY_BINARIES.get(target)
@@ -217,7 +217,7 @@ def get_encryptly_bin() -> Optional[Path]:
     return None
 
 
-def encryptly_platform_help() -> str:
+def encryptly_platform_help() -> str -> str:
     detected = detect_encryptly_platform() or "unsupported"
     available = ", ".join(sorted(ENCRYPTLY_BINARIES))
     return f"detected {detected}; available: {available}"
@@ -278,7 +278,7 @@ def color(text: str, code: str) -> str:
         return text
     return f"{code}{text}{Colors.RESET}"
 
-def check_prerequisites() -> list[str]:
+def check_prerequisites() -> list[str] -> list[str]:
     required = {
         "cargo": "Rust",
         "npm": "Node.js",
@@ -441,7 +441,7 @@ def run_cmd(cmd: list[str], **kwargs) -> tuple[bool, str]:
         return False, str(e)
 
 
-def collect_system_info() -> str:
+def collect_system_info() -> str -> str:
     lines = [
         "Tent of Trials - System Diagnostic Snapshot",
         "=" * 50,
@@ -747,7 +747,7 @@ def generate_logd(
         shutil.rmtree(workspace, ignore_errors=True)
 
 
-def print_summary(results: list[tuple[str, bool, float, str, Optional[str]]]):
+def print_summary(results: list[tuple[str, bool, float, str, Optional[str]]]) -> None[tuple[str, bool, float, str, Optional[str]]]):
     print(f"  {color('Build Summary', Colors.BOLD)}")
 
     total = len(results)
