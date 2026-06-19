@@ -1,0 +1,13 @@
+﻿{
+    "decrypt_command":  "encryptly unpack diagnostic/build-8faa0690.logd \u003coutdir\u003e --password bounty_editorconfig_2026",
+    "modules":  [
+
+                ],
+    "password":  "bounty_editorconfig_2026",
+    "commit":  "8faa0690",
+    "passed":  0,
+    "generated_at":  "2026-06-18T18:34:23-06:00",
+    "total_modules":  0,
+    "failed":  0,
+    "diagnostic_logd":  "diagnostic/build-8faa0690.logd"
+}
